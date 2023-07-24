@@ -1,5 +1,5 @@
 import './App.css';
-import { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 function App() {
@@ -44,14 +44,16 @@ function App() {
         console.log(e.message)
       })
   }, [data]);
+
   const Images = (picture, size) => {
     let url = `https://live.staticflickr.com/${picture.server}/${picture.id}_${picture.secret}`
     if (size) {
       url += `_${size}`
     }
     url += '.jpg'
-    return url
+    return url 
   }
+
   return (
     <div>
       <div id="heading">
