@@ -58,7 +58,7 @@ function App() {
     <div>
       <div id="heading">
         <span className="heading">React Photo Search</span>
-        <button className="book" onClick={bookmark}>BookMarks</button>
+        
       </div>
       <input type="text" placeholder='Search high-resolution images' onChange={(e) => setSearch(e.target.value)} />
       <button className="search" onClick={() => {
